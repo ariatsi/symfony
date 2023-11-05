@@ -22,5 +22,13 @@ class HomeController extends AbstractController {
         return $this->redirect('https://www.google.com');
     }
 
+    //#[Route('/showTemplate')]
+    public function showTemplate() {
+        // ...
+        return $this->render('base.html.twig');
+    }
+    
+    
+
 }
 

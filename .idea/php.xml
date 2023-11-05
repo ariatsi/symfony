@@ -44,6 +44,43 @@
       <path value="$PROJECT_DIR$/symfony_init/vendor/psr/container" />
       <path value="$PROJECT_DIR$/symfony_init/vendor/symfony/dotenv" />
       <path value="$PROJECT_DIR$/symfony_init/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/composer" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/symfony_twig/vendor/symfony/twig-bridge" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
