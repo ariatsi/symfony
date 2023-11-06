@@ -5,6 +5,8 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
+
 
 class HomeController extends AbstractController {
     //#[Route('/bonjour')]
@@ -27,8 +29,37 @@ class HomeController extends AbstractController {
         // ...
         return $this->render('base.html.twig');
     }
-    
-    
+
+    #[Route('/showProducts')]
+    public function showProducts(Request $request) {
+        //$parametre = $request->query->get('product');
+
+        $parametres = $request->query->all();
+        // Affichage des résultats
+        dump($parametres);
+
+        // Affichage du résultat
+        //dump($parametre);
+        return new Response('<h1>Utilisation de l\'objet Request dans un Contrôleur<h1>');
+    }
+
+    #[Route('/showProductsPro')]
+    public function showProductsPro(Request $request) {
+        // Récupération de la valeur 'product' avec une valeur par défaut
+        $product = $request->query->get('product', 'defaultProduct');
+
+        // Vérification de la présence de 'category'
+        $hasCategory = $request->query->has('category');
+
+        // Récupération des clés des paramètres
+        $paramKeys = $request->query->keys();
+
+        // Affichage des résultats
+        dump($product, $hasCategory, $paramKeys);
+        return new Response('<h1>Utilisation de l\'objet Request dans un Contrôleur<h1>');
+    }
+
+
 
 }
 
