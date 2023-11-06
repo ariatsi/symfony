@@ -1,0 +1,9 @@
+{# templates/product.html.twig #}
+<h2>Liste de produits :</h2>
+<ul>
+    {% for product in products %}
+        <li>{{ product }}</li>
+    {% else %}
+        <li>Aucun produit trouvé.</li>
+    {% endfor %}
+</ul>

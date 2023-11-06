@@ -1,0 +1,21 @@
+{# Suite du fichier templates/product.html.twig #}
+<ul>
+    {% for product in products %}
+        <li>{{ loop.index }} - {{ product.name }} à {{ product.price }} euros</li>
+        {% if loop.last %}
+            <p>Ceci est le dernier produit de la liste.</p>
+        {% endif %}
+    {% else %}
+        <li>Aucun produit trouvé.</li>
+    {% endfor %}
+</ul>
+
+
+<a href="{{ path('customers_list') }}">Voir les clients</a>
+
+<a href="{{ path('product_show', {'id': product.id}) }}">Voir ce produit</a>
+
+
+
+
+

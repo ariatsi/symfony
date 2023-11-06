@@ -30,7 +30,7 @@ class HomeController extends AbstractController {
         return $this->render('base.html.twig');
     }
 
-    #[Route('/showProducts')]
+    #[Route('/showProducts', name: 'products_list')]
     public function showProducts(Request $request) {
         //$parametre = $request->query->get('product');
 
@@ -38,9 +38,16 @@ class HomeController extends AbstractController {
         // Affichage des résultats
         dump($parametres);
 
+        $products = ['Ordinateur', 'Téléphone', 'Radio', 'Cassette'];
+
+        return $this->render('product.html.twig', [
+            'products' => $products,
+        ]);
+
+
         // Affichage du résultat
         //dump($parametre);
-        return new Response('<h1>Utilisation de l\'objet Request dans un Contrôleur<h1>');
+        // return new Response('<h1>Utilisation de l\'objet Request dans un Contrôleur<h1>');
     }
 
     #[Route('/showProductsPro')]
@@ -59,7 +66,28 @@ class HomeController extends AbstractController {
         return new Response('<h1>Utilisation de l\'objet Request dans un Contrôleur<h1>');
     }
 
+    #[Route('/customers', name: 'customers_list')]
+    public function getCustomers(): Response
+    {
+        $customers = ['John', 'Laurent', 'Alain', 'Pierre'];
 
+        // La logique pour récupérer les données des clients peut être ajoutée ici
+        return $this->render('customer.html.twig', ['customers' => $customers]);
+    }
+
+    #[Route('/category/{id<\d+>}', name: 'category_show')]
+    public function getCategorie(int $id) {
+        $category_id = $id;
+        return $this->render('category.html.twig', [
+            'id_category' => $category_id,
+        ]);        
+    }
+        
+    #[Route('/pages', name: 'pages')]
+    public function getPages(): Response
+    {
+        return $this->render('pages.html.twig');
+    }
 
 }
 
