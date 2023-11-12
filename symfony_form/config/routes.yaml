@@ -1,0 +1,13 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+bonjour:
+    path: /bonjour
+    controller: App\Controller\HomeController::bonjour
+
+show_template:
+    path: /showtemplate
+    controller: App\Controller\HomeController::showTemplate
