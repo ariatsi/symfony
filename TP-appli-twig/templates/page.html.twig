@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pages{% endblock %}
+
+{% block body %}
+    <h1>Pages</h1>
+    <ul class="list-unstyled">
+        <li><a href="{{ path('home') }}">Accueil</a></li>
+        <li><a href="{{ path('products_list') }}">Mes Produits</a></li>
+        <li><a href="{{ path('customers_list') }}">Mes Clients</a></li>
+    </ul>
+{% endblock %}
