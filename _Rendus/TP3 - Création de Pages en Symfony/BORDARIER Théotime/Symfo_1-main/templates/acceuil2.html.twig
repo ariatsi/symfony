@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+        <link rel="stylesheet" href="../css/style.css">
+{% endblock %}
+{% block title %}
+    Rep
+{% endblock %}
+
+
+{% block body %}
+    <h1>Ceci est l'Accueil</h1>
+
+    <h4>Félicitation</h4>
+    <p>Bravo <span class="gras">{{nom}}</span> tu a réussi a remplire un formulaire</p>
+
+    <a href="/"><button>Retour a l'Accueil</button></a>
+    <p>Voici une image en gage de récompense</p>
+    <img src="https://imgs.search.brave.com/Hr0K_367I8VSkEaJiH0x64w5sDlOBYSupSnpPsfI0XA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/ZXZhbmdlbGlvbmVk/LXRhcm90LWNhcmRz/LXYwLTlhNDRubmds/dW5mYjEuanBnP3dp/ZHRoPTY0MCZjcm9w/PXNtYXJ0JmF1dG89/d2VicCZzPTZkOGRm/NzE1ZWMzZTM5NjEz/YjBlYWI0YjkxYzkx/NmIwYzAyZWVmYzA" alt="Asuka">
+
+{% endblock %}

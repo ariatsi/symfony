@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {% include 'navBar.html.twig' %}
+<body class="customers">
+    <h1>Liste des Clients</h1>
+    <ol>
+        {% for customer in customers %}
+            <li>{{ customer.name }}</li>
+        {% endfor %}
+    </ol>
+
+    <button onclick="window.location='{{ path('dashboard') }}'">Retour</button>
+
+</body>
+</html>

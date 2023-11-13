@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4 mt-5">Détails du Produit</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <th class="bg-primary text-white">Nom du Produit</th>
+                    <td>{{ product.name }}</td>
+                </tr>
+                <tr>
+                    <th class="bg-primary text-white">Description</th>
+                    <td>{{ product.description }}</td>
+                </tr>
+                <tr>
+                    <th class="bg-primary text-white">Prix</th>
+                    <td>{{ product.price }} €</td>
+                </tr>
+            </table>
+        </div>
+        <a class="btn btn-primary" href="{{ path('home') }}">Retour</a>
+    </div>
+</body>
+</html>

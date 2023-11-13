@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+
+{% block title %}
+    Accueil
+{% endblock %}
+
+
+{% block body %}
+    <h1>Ceci est l'Accueil</h1>
+
+    <h4>Quel est ton nom</h4>
+    <form action="/accueil/reponse" method="post">
+        <input type="text" name="nom">
+
+        <input type="submit" value="Envoyer">
+        
+
+    </form>
+{% endblock %}

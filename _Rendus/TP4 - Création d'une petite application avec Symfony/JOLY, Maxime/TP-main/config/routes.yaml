@@ -1,0 +1,23 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+home:
+    path: /menu
+    controller:  App\Controller\HomeController::menu
+
+show_products:
+    path: /showproducts
+    controller: App\Controller\ProductController::showProducts
+
+product_detail:
+    path: /product/{id}
+    controller: App\Controller\ProductController::detail
+
+show_customers:
+    path: /showcustomers
+    controller: App\Controller\CustomerController::showCustomers
+
+customer_detail:
+    path: /customer/{id}
+    controller: App\Controller\CustomerController::customerDetails

@@ -1,0 +1,18 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+welcome:
+    path: /welcome
+    controller: App/Controller/WelcomeController::index
+
+contact:
+    path: /contact
+    controller: App/Controller/ContactController::index
+    methods: POST
+
+moreInfos:
+    path: /moreInfos
+    controller: App/Controller/MoreInfosController::index
