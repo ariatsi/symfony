@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>Résultats du Feedback</h1>
+    <p>Nom Client: {{ feedback.nomClient }}</p>
+    <p>Email Client: {{ feedback.emailClient }}</p>
+    <p>Note Produit: {{ feedback.noteProduit }}</p>
+    <p>Commentaires: {{ feedback.commentaires }}</p>
+    
+{% endblock %}
