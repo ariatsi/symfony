@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Feedback List</h1>
+    <p><a href="{{ path('feedback') }}">New Feedback</a></p>
+<!-- V1 : déclaration explicite des champs -->
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom du Client</th>
+            <th>Email du Client</th>
+            <th>Note du Produit</th>
+            <th>Commentaires</th>
+            <th>Date de Soumission</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for feedback in feedbacks %}
+            <tr>
+                <td>{{ feedback.id }}</td>
+                <td>{{ feedback.nomClient }}</td>
+                <td>{{ feedback.emailClient }}</td>
+                <td>{{ feedback.noteProduit }}</td>
+                <td>{{ feedback.commentaires }}</td>
+                <td>{{ feedback.dateSoumission|date('Y-m-d H:i') }}</td>
+                <td>
+                    <a href="{{ path('feedback_edit', {'id': feedback.id}) }}">Edit</a>
+                    <a href="{{ path('feedback_delete', {'id': feedback.id}) }}">Delete</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{#  <!-- V2 : Recuperation des noms des champs de la bdd -->
+
+        <table>
+            <thead>
+            <tr>
+                {% for fieldName in fieldNames %}
+                    <th>{{ fieldName }}</th>
+                    <!-- Utilisez "fieldName|capitalize" si vous souhaitez que les entêtes soient capitalisées -->
+                {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for feedback in feedbacks %}
+                <tr>
+                    {% for fieldName in fieldNames %}
+                        <td>
+                            {{ feedback[fieldName] }}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+#}
+
+{% endblock %}

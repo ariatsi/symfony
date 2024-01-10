@@ -3,7 +3,19 @@
 {% block title %}Hello CustomerController!{% endblock %}
 
 {% block body %}
-
-    {{ form(customerForm) }}
+    <style>
+        form {
+            background-color: #efefef; padding: 15px; border-radius: 7px;
+        }
+    </style>
+    <div id="conteiner" style="display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              height: 100vh;">
+        <div id="formulaire" style="height: 50%; width: 50%; margin: auto;">
+            {{ form(customerForm) }}
+            <p><a href="{{ path('customer_list') }}">All customers</a></p>
+        </div>
+    </div>
 
 {% endblock %}
